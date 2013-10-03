@@ -11,9 +11,9 @@ var mensaje= function(msg, typeM){
     }
 };
 
-//mensaje('Hola','prompt');
+//mensaje('Hello World!','prompt');
 
-/**toggle visibilty
+/**toggle visibility
 shows/hides visibility of an element, via click or hover.
 It chages an element disblay status between 'block' and 'none'
 **/
