@@ -48,3 +48,18 @@ Ex:
 </ul>
 */
 
+/***color changing timer ***/
+function color_timer(){
+ fecha = new Date();
+ dday = fecha.getDate(); 
+ hour = fecha.getHours();
+ minute = fecha.getMinutes(); 
+		if(dday == 9 && hour>=16){
+		    if(minute>=01){
+		        $("div").css("background","gray");
+		    }
+			if(minute>=31){
+			    $("div").css("background","red");
+		    }
+		} 
+}
