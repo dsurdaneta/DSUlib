@@ -1,0 +1,156 @@
+<style>
+.cajaForm{
+	width:436px; 
+	float:left;
+	font-family:Arial, Helvetica;
+	font-size:12px;
+	color: #736458;
+}
+.formulario{
+	width:436px; 
+	height:256px; 
+	background-color: #F8F2D7; 
+	float:left;
+	border: 1px solid #F8F2D7;
+	-moz-border-radius: 5px;
+  	-webkit-border-radius: 5px;
+  	border-radius: 5px;
+  	outline: 0;
+ 	-webkit-appearance: none;
+}
+.formulario input, .formulario textarea{
+	font-family:Arial, Helvetica;
+	font-size:12px;	
+	border: 1px solid #FFFFFF;
+	-moz-border-radius: 5px;
+  	-webkit-border-radius: 5px;
+  	border-radius: 5px;
+  	outline: 0;
+ 	-webkit-appearance: none;
+ 	padding: 2px;
+}
+.btn_enviar{
+	height: 30px;
+	float:right;
+	margin-top: 5px;
+	font-family:Arial, Helvetica;
+	font-size:14px;
+	background-color: #736458;
+	color: #FFFFFF;
+	border: 1px solid #F8F2D7;
+	-moz-border-radius: 10px;
+  	-webkit-border-radius: 10px;
+  	border-radius: 10px;
+  	outline: 0;
+ 	-webkit-appearance: none;
+}	
+.tabla1{
+	float:left;
+}
+.pad-left{
+	margin-left: 8px;
+}	
+.tabla2{
+	float:right;
+}
+.pad-right{
+	margin-right: 8px;
+}		
+</style>
+
+<div class="cajaForm">
+<form name="contactform" method="post" action="send_form_email.php" class="formulario" >
+<div class="tabla1 pad-left">
+<table >
+<tr>
+ <td >
+  <label for="nombre">*Nombre:</label>
+ </td>
+</tr>
+<tr>
+ <td >
+  <input  type="text" name="nombre" maxlength="50"size="30">
+ </td>
+</tr>
+<tr>
+ <td >
+  <label for="company">Empresa:</label>
+ </td>
+ </tr>
+<tr>
+ <td >
+  <input  type="text" name="company" maxlength="80"size="30">
+ </td>
+</tr>
+</table>
+
+<table class="tabla1">
+<tr>
+ <td >
+  <label for="pais">Pa&iacute;s:</label>
+ </td>
+ </tr>
+<tr>
+ <td >
+  <input  type="text" name="pais" maxlength="50" size="10">
+ </td>
+</tr>
+</table>
+<table class="tabla2">
+<tr>
+ <td >
+  <label for="ciudad">Ciudad:</label>
+ </td>
+ </tr>
+<tr>
+ <td >
+  <input  type="text" name="ciudad" maxlength="50" size="10">
+ </td>
+</tr>
+</table>
+<table>
+	<tr>
+ <td>
+  <label for="telefono">Tel&eacute;fono:</label>
+ </td>
+ </tr>
+<tr>
+ <td >
+  <input  type="text" name="telefono" maxlength="30"size="30">
+ </td>
+</tr>
+<tr>
+ <td >
+  <label for="email">*Email:</label>
+ </td>
+ </tr>
+<tr>
+ <td >
+  <input  type="text" name="email" maxlength="80"size="30">
+ </td>
+</tr>
+
+</table>
+</div>
+<div class="tabla2 pad-right">
+<table id="tabla2">
+   <tr>
+ <td >
+  <label for="comentarios">Comentarios:</label>
+ </td>
+ </tr>
+<tr>
+ <td >
+  <textarea  name="comentarios" maxlength="1000" cols="32" rows="10"></textarea>
+ </td>
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="ENVIAR" class="btn_enviar">  
+ </td>
+</tr>
+</table>
+</div>
+</form>
+<p><b>*Campo Obligatorio</b></p>
+</div>

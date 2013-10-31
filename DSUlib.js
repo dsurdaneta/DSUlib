@@ -78,3 +78,14 @@ $(document).ready(function() {
       }
    );
 });
+
+/**loading a page from a dropdown list (select)**/
+if ( value!='') window.open(value,'_blank');
+/*
+<td style="padding-left:4px;"><select onchange="javascript:if ( value!='') window.open(value,'_blank');">
+	<option value="http://www.optionwebsite.com">Option 1/option>
+	<option value="http://www.gothere.org">Option 2</option>
+	<option value="http://www.clickhere.net">Option 3</option>
+</td>
+*/
+
